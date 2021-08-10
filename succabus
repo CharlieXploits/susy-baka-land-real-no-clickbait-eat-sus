@@ -9,7 +9,6 @@ end)
 wait(.1)
 local bambam = Instance.new("BodyThrust")
 bambam.Parent = game.Players.LocalPlayer.Character.Torso
-bambam.Force = Vector3.new(power,0,power)
 bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 
 
@@ -329,6 +328,7 @@ local plr = game.Players.LocalPlayer
 local mouse = plr:GetMouse()
 
 plr.Character.Torso.BodyThrust:Destroy()
+bambam.Force = Vector3.new(power,0,power)
 
 plr.Character["Pal Hair"].Handle.AccessoryWeld:Destroy()
 
